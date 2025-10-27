@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(207, 187, 174);
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: Nunito;
+  font-size: 2em;
+  color: rgb(84, 51, 29);
+}
+
+p {
+  font-family: Nunito;
+  color:rgb(84, 51, 29);
+}
+
+button{
+  font-family: Nunito;
+  font-size: 1em;
+  background-color: rgb(84, 51, 29);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(57, 35, 20);
+}
