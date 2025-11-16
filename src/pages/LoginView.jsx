@@ -2,10 +2,13 @@ import { useState } from "react";
 import { userApi } from "../api/userApi";
 import { useNavigate } from "react-router-dom";
 import "../index.css";
+import { useContext } from "react";
+import { UserContext } from "../context/UserContext";
 
 export default function LoginView() {
   const [form, setForm] = useState({ login: "", password: "" });
   const navigate = useNavigate();
+  const { login } = useContext(UserContext);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -13,6 +16,7 @@ export default function LoginView() {
     try {
       const res = await userApi.login(form);
       console.log("Login success:", res.data);
+      login(res.data);
       navigate("/");
 
     } catch (error) {

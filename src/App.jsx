@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import LoginView from "./pages/LoginView.jsx";
@@ -8,9 +8,8 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Navbar />
+    <div className="App">
+      <Navbar />
         <main>
           <Routes>
             <Route path="/" element={<LoginPage />} />
@@ -18,9 +17,8 @@ function App() {
             <Route path="/register" element={<RegisterView />} />
           </Routes>
         </main>
-        <Footer />
-      </div>
-    </BrowserRouter>
+      <Footer />
+    </div>
   );
 }
 
