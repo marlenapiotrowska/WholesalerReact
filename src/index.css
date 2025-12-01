@@ -63,6 +63,8 @@ button:hover {
 }
 
 select.form-input {
+  color: rgb(84, 51, 29);       /* kolor tekstu */
+  background-color: #fff;
   appearance: none !important;
   -webkit-appearance: none !important;
   -moz-appearance: none !important;

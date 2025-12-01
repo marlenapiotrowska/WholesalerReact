@@ -1,6 +1,6 @@
 import Menu from "../components/Menu/Menu";
 
-function LoginPage() {
+export default function HomePage() {
 
     return (
         <div>
@@ -8,5 +8,3 @@ function LoginPage() {
             <Menu />
         </div>);
 }
-
-export default LoginPage;

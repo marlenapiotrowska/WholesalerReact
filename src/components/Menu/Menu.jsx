@@ -12,13 +12,16 @@ function Menu() {
       { to: "/owner/costs", label: "Costs" },
     ],
     Manager: [
-      { to: "/manager/dashboard", label: "Dashboard" },
-      { to: "/manager/orders", label: "Orders" },
-      { to: "/manager/products", label: "Products" },
+      { to: "/manager/assignTask", label: "Assign task to an Employee" },
+      { to: "/manager/requirements", label: "Requirements" },
+      { to: "/manager/tasks", label: "Tasks" },
+      { to: "/manager/departMushrooms", label: "Depart Mushrooms" },
     ],
     Employee: [
-      { to: "/employee/tasks", label: "Tasks" },
-      { to: "/employee/products", label: "Products" },
+      { to: "/employee/worktasks", label: "Tasks" },
+      { to: "/employee/deliverMushrooms", label: "Products" },
+      { to: "/employee/startWork", label: "Products" },
+      { to: "/employee/finishWork", label: "Products" },
     ],
   };
 
