@@ -6,6 +6,8 @@ import RegisterView from "./pages/RegisterView";
 import Footer from "./components/Footer/Footer";
 import CostsPage from "./pages/Owner/CostsPage";
 import AssignTaskPage from "./pages/Manager/AssignTaskPage";
+import RequirementsPage from "./pages/Manager/RequirementsPage";
+
 import './App.css';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
             <Route path="/register" element={<RegisterView />} />
             <Route path="/owner/costs" element={<CostsPage />} />
             <Route path="/manager/assignTask" element={<AssignTaskPage />} />
+            <Route path="/manager/requirements" element={<RequirementsPage />} />
+
           </Routes>
         </main>
       <Footer />

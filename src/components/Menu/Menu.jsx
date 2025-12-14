@@ -14,12 +14,8 @@ function Menu() {
     Manager: [
       { to: "/manager/assignTask", label: "Assign task to an Employee" },
       { to: "/manager/requirements", label: "Requirements" },
-      { to: "/manager/tasks", label: "Tasks" },
-      { to: "/manager/departMushrooms", label: "Depart Mushrooms" },
     ],
     Employee: [
-      { to: "/employee/worktasks", label: "Tasks" },
-      { to: "/employee/deliverMushrooms", label: "Products" },
       { to: "/employee/startWork", label: "Products" },
       { to: "/employee/finishWork", label: "Products" },
     ],
